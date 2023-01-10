@@ -41,6 +41,7 @@
             // 
             // button1a
             // 
+            this.button1a.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1a.Location = new System.Drawing.Point(22, 30);
             this.button1a.Name = "button1a";
             this.button1a.Size = new System.Drawing.Size(80, 66);
@@ -50,6 +51,7 @@
             // 
             // button1b
             // 
+            this.button1b.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1b.Location = new System.Drawing.Point(108, 30);
             this.button1b.Name = "button1b";
             this.button1b.Size = new System.Drawing.Size(80, 66);
@@ -59,6 +61,7 @@
             // 
             // button1c
             // 
+            this.button1c.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1c.Location = new System.Drawing.Point(194, 30);
             this.button1c.Name = "button1c";
             this.button1c.Size = new System.Drawing.Size(80, 66);
@@ -68,6 +71,7 @@
             // 
             // button2a
             // 
+            this.button2a.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2a.Location = new System.Drawing.Point(22, 102);
             this.button2a.Name = "button2a";
             this.button2a.Size = new System.Drawing.Size(80, 66);
@@ -77,6 +81,7 @@
             // 
             // button2b
             // 
+            this.button2b.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2b.Location = new System.Drawing.Point(108, 102);
             this.button2b.Name = "button2b";
             this.button2b.Size = new System.Drawing.Size(80, 66);
@@ -86,6 +91,7 @@
             // 
             // button2c
             // 
+            this.button2c.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2c.Location = new System.Drawing.Point(194, 102);
             this.button2c.Name = "button2c";
             this.button2c.Size = new System.Drawing.Size(80, 66);
@@ -95,6 +101,7 @@
             // 
             // button3a
             // 
+            this.button3a.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3a.Location = new System.Drawing.Point(22, 174);
             this.button3a.Name = "button3a";
             this.button3a.Size = new System.Drawing.Size(80, 66);
@@ -104,6 +111,7 @@
             // 
             // button3b
             // 
+            this.button3b.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3b.Location = new System.Drawing.Point(108, 174);
             this.button3b.Name = "button3b";
             this.button3b.Size = new System.Drawing.Size(80, 66);
@@ -113,6 +121,7 @@
             // 
             // button3c
             // 
+            this.button3c.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3c.Location = new System.Drawing.Point(194, 174);
             this.button3c.Name = "button3c";
             this.button3c.Size = new System.Drawing.Size(80, 66);
@@ -136,6 +145,7 @@
             this.Controls.Add(this.button1a);
             this.Name = "game3x3";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.game3x3_Load);
             this.ResumeLayout(false);
 
         }
