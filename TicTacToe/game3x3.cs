@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,9 +16,7 @@ namespace TicTacToe
     {
         int XOcount = 0;
         int[,] array= new int[3, 3];
-                
-        //for(int i = 0; i < 3; i++){}
-
+        
         public game3x3(menu menu)
         {
             InitializeComponent();
@@ -25,201 +24,204 @@ namespace TicTacToe
 
         private void button1a_Click(object sender, EventArgs e)
         {
-            if(XOcount%2 == 0)
-            {
-                array[0, 0] = 1;
-                button1a.Text = "X";
-                button1a.Enabled = false;
-                XOcount++;
-                check();
-
-            }
-            else
-            {
-                array[0, 0] = -1;
-                button1a.Text = "O";
-                button1a.Enabled = false;
-                XOcount++;
-                check();
-            }
-        
+            onClick(0, 0);
         }
 
         private void button1b_Click(object sender, EventArgs e)
         {
-            if (XOcount % 2 == 0)
-            {
-                array[0, 1] = 1;
-                button1b.Text = "X";
-                button1b.Enabled = false;
-                XOcount++;
-                check();
-
-            }
-            else
-            {
-                array[0, 1] = -1;
-                button1b.Text = "O";
-                button1b.Enabled = false;
-                XOcount++;
-                check();
-            }
-        
+            onClick(0, 1);        
         }
 
         private void button1c_Click(object sender, EventArgs e)
         {
-            if (XOcount % 2 == 0)
-            {
-                array[0, 2] = 1;
-                button1c.Text = "X";
-                button1c.Enabled = false;
-                XOcount++;
-                check();
-
-            }
-            else
-            {
-                array[0, 2] = -1;
-                button1c.Text = "O";
-                button1c.Enabled = false;
-                XOcount++;
-                check();
-
-            }
-        
+            onClick(0, 2);        
         }
 
         private void button2a_Click(object sender, EventArgs e)
         {
-            if (XOcount % 2 == 0)
-            {
-                array[1, 0] = 1;
-                button2a.Text = "X";
-                button2a.Enabled = false;
-                XOcount++;
-                check();
-
-
-            }
-            else
-            {
-                array[1, 0] = -1;
-                button2a.Text = "O";
-                button2a.Enabled = false;
-                XOcount++;
-                check();
-
-            }
-        
+            onClick(1, 0);        
         }
 
         private void button2b_Click(object sender, EventArgs e)
         {
-            if (XOcount % 2 == 0)
-            {
-                array[1, 1] = 1;
-                button2b.Text = "X";
-                button2b.Enabled = false;
-                XOcount++;
-                check();
-
-            }
-            else
-            {
-                array[1, 1] = -1;
-                button2b.Text = "O";
-                button2b.Enabled = false;
-                XOcount++;
-                check();
-            }
-        
+            onClick(1, 1);
         }
 
         private void button2c_Click(object sender, EventArgs e)
         {
-            if (XOcount % 2 == 0)
-            {
-                array[1, 2] = 1;
-                button2c.Text = "X";
-                button2c.Enabled = false;
-                XOcount++;
-                check();
-
-            }
-            else
-            {
-                array[1, 2] = -1;
-                button2c.Text = "O";
-                button2c.Enabled = false;
-                XOcount++;
-                check();
-            }
-        
+            onClick(1, 2);
         }
 
         private void button3a_Click(object sender, EventArgs e)
         {
-            if (XOcount % 2 == 0)
-            {
-                array[2, 0] = 1;
-                button3a.Enabled = false;
-                button3a.Text = "X";
-                XOcount++;
-                check();
-
-            }
-            else
-            {
-                array[2, 0] = -1;
-                button3a.Enabled = false;
-                button3a.Text = "O";
-                XOcount++;
-                check();
-            }
-        
+            onClick(2, 0);        
         }
 
         private void button3b_Click(object sender, EventArgs e)
         {
-            if (XOcount % 2 == 0)
-            {
-                array[2, 1] = 1;
-                button3b.Text = "X";
-                button3b.Enabled = false;
-                XOcount++;
-                check();
-
-            }
-            else
-            {
-                array[2, 1] = -1;
-                button3b.Text = "O";
-                button3b.Enabled = false;
-                XOcount++;
-                check();
-            }
-        
+            onClick(2, 1);
         }
 
         private void button3c_Click(object sender, EventArgs e)
         {
+            onClick(2, 2);
+        }
+
+        private void onClick(int x, int y)
+        {
             if (XOcount % 2 == 0)
             {
-                array[2, 2] = 1;
-                button3c.Text = "X";
-                button3c.Enabled = false;
-                XOcount++;
-                check();
+                array[x, y] = 1;
+                if (x == 0)
+                {
+                    if (y == 0)
+                    {
+                        button1a.Text = "X";
+                        button1a.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 1)
+                    {
+                        button1b.Text = "X";
+                        button1b.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 2)
+                    {
+                        button1c.Text = "X";
+                        button1c.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                }
+                else if (x == 1)
+                {
+                    if (y == 0)
+                    {
+                        button2a.Text = "X";
+                        button2a.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 1)
+                    {
+                        button2b.Text = "X";
+                        button2b.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 2)
+                    {
+                        button2c.Text = "X";
+                        button2c.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                }
+                else if (x == 2)
+                {
+                    if (y == 0)
+                    {
+                        button3a.Text = "X";
+                        button3a.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 1)
+                    {
+                        button3b.Text = "X";
+                        button3b.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 2)
+                    {
+                        button3c.Text = "X";
+                        button3c.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+
+                }
 
             }
             else
             {
-                array[2, 2] = -1;
-                button3c.Text = "O";
-                button3c.Enabled = false;
-                XOcount++;
-                check();
+                array[x, y] = -1;
+                if (x == 0)
+                {
+                    if (y == 0)
+                    {
+                        button1a.Text = "O";
+                        button1a.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 1)
+                    {
+                        button1b.Text = "O";
+                        button1b.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 2)
+                    {
+                        button1c.Text = "O";
+                        button1c.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                }
+                else if (x == 1)
+                {
+                    if (y == 0)
+                    {
+                        button2a.Text = "O";
+                        button2a.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 1)
+                    {
+                        button2b.Text = "O";
+                        button1b.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 2)
+                    {
+                        button2c.Text = "O";
+                        button2c.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                }
+                else if (x == 2)
+                {
+                    if (y == 0)
+                    {
+                        button3a.Text = "O";
+                        button3a.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 1)
+                    {
+                        button3b.Text = "O";
+                        button3b.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                    else if (y == 2)
+                    {
+                        button3c.Text = "O";
+                        button3c.Enabled = false;
+                        XOcount++;
+                        check();
+                    }
+                }
             }
         }
         private void reset()
