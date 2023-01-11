@@ -71,6 +71,9 @@ namespace TicTacToe
         {
             if (XOcount % 2 == 0)
             {
+                buttonwhichturnXO.BackColor= Color.DarkSeaGreen;
+                buttonwhichturnXO.Text = "O";
+
                 array[x, y] = 1;
                 if (x == 0)
                 {
@@ -78,22 +81,19 @@ namespace TicTacToe
                     {
                         button1a.Text = "X";
                         button1a.Enabled = false;
-                        XOcount++;
-                        check();
+                        button1a.BackColor = Color.Tomato;
                     }
                     else if (y == 1)
                     {
                         button1b.Text = "X";
                         button1b.Enabled = false;
-                        XOcount++;
-                        check();
+                        button1b.BackColor = Color.Tomato;
                     }
                     else if (y == 2)
                     {
                         button1c.Text = "X";
                         button1c.Enabled = false;
-                        XOcount++;
-                        check();
+                        button1c.BackColor = Color.Tomato;
                     }
                 }
                 else if (x == 1)
@@ -102,22 +102,19 @@ namespace TicTacToe
                     {
                         button2a.Text = "X";
                         button2a.Enabled = false;
-                        XOcount++;
-                        check();
+                        button2a.BackColor = Color.Tomato;
                     }
                     else if (y == 1)
                     {
                         button2b.Text = "X";
                         button2b.Enabled = false;
-                        XOcount++;
-                        check();
+                        button2b.BackColor = Color.Tomato;
                     }
                     else if (y == 2)
                     {
                         button2c.Text = "X";
                         button2c.Enabled = false;
-                        XOcount++;
-                        check();
+                        button2c.BackColor = Color.Tomato; 
                     }
                 }
                 else if (x == 2)
@@ -126,22 +123,19 @@ namespace TicTacToe
                     {
                         button3a.Text = "X";
                         button3a.Enabled = false;
-                        XOcount++;
-                        check();
+                        button3a.BackColor = Color.Tomato;
                     }
                     else if (y == 1)
                     {
                         button3b.Text = "X";
                         button3b.Enabled = false;
-                        XOcount++;
-                        check();
+                        button3b.BackColor = Color.Tomato;
                     }
                     else if (y == 2)
                     {
                         button3c.Text = "X";
                         button3c.Enabled = false;
-                        XOcount++;
-                        check();
+                        button3c.BackColor = Color.Tomato;
                     }
 
                 }
@@ -149,6 +143,9 @@ namespace TicTacToe
             }
             else
             {
+                buttonwhichturnXO.BackColor = Color.Tomato;
+                buttonwhichturnXO.Text = "X";
+
                 array[x, y] = -1;
                 if (x == 0)
                 {
@@ -156,22 +153,19 @@ namespace TicTacToe
                     {
                         button1a.Text = "O";
                         button1a.Enabled = false;
-                        XOcount++;
-                        check();
+                        button1a.BackColor = Color.DarkSeaGreen;
                     }
                     else if (y == 1)
                     {
                         button1b.Text = "O";
                         button1b.Enabled = false;
-                        XOcount++;
-                        check();
+                        button1b.BackColor = Color.DarkSeaGreen;
                     }
                     else if (y == 2)
                     {
                         button1c.Text = "O";
                         button1c.Enabled = false;
-                        XOcount++;
-                        check();
+                        button1c.BackColor = Color.DarkSeaGreen;
                     }
                 }
                 else if (x == 1)
@@ -180,22 +174,19 @@ namespace TicTacToe
                     {
                         button2a.Text = "O";
                         button2a.Enabled = false;
-                        XOcount++;
-                        check();
+                        button2a.BackColor = Color.DarkSeaGreen;
                     }
                     else if (y == 1)
                     {
                         button2b.Text = "O";
-                        button1b.Enabled = false;
-                        XOcount++;
-                        check();
+                        button2b.Enabled = false;
+                        button2b.BackColor= Color.DarkSeaGreen;
                     }
                     else if (y == 2)
                     {
                         button2c.Text = "O";
                         button2c.Enabled = false;
-                        XOcount++;
-                        check();
+                        button2c.BackColor= Color.DarkSeaGreen;
                     }
                 }
                 else if (x == 2)
@@ -204,25 +195,24 @@ namespace TicTacToe
                     {
                         button3a.Text = "O";
                         button3a.Enabled = false;
-                        XOcount++;
-                        check();
+                        button3a.BackColor = Color.DarkSeaGreen;
                     }
                     else if (y == 1)
                     {
                         button3b.Text = "O";
                         button3b.Enabled = false;
-                        XOcount++;
-                        check();
+                        button3b.BackColor = Color.DarkSeaGreen;
                     }
                     else if (y == 2)
                     {
                         button3c.Text = "O";
                         button3c.Enabled = false;
-                        XOcount++;
-                        check();
+                        button3c.BackColor = Color.DarkSeaGreen;
                     }
                 }
             }
+            check();
+            XOcount++;
         }
         private void reset()
         {
@@ -230,32 +220,43 @@ namespace TicTacToe
 
             button1a.Text = "";
             button1a.Enabled = true;
+            button1a.BackColor= Color.White;
 
             button1b.Text = "";
             button1b.Enabled = true;
+            button1b.BackColor = Color.White;
 
             button1c.Text = "";
             button1c.Enabled = true;
+            button1c.BackColor = Color.White;
 
             button2a.Text = "";
             button2a.Enabled = true;
+            button2a.BackColor = Color.White;
 
             button2b.Text = "";
             button2b.Enabled = true;
+            button2b.BackColor = Color.White;
 
             button2c.Text = "";
             button2c.Enabled = true;
+            button2c.BackColor = Color.White;
 
             button3a.Text = "";
             button3a.Enabled = true;
+            button3a.BackColor = Color.White;
 
             button3b.Text = "";
             button3b.Enabled = true;
+            button3b.BackColor = Color.White;
 
             button3c.Text = "";
             button3c.Enabled = true;
+            button3c.BackColor = Color.White;
 
             XOcount = 0;
+            buttonwhichturnXO.BackColor= Color.White;
+            buttonwhichturnXO.Text = "";
 
 
         }
