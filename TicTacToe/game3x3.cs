@@ -17,10 +17,14 @@ namespace TicTacToe
         int XOcount = 0;
         int[,] array= new int[3, 3];
         
+
+
         public game3x3(menu menu)
         {
             InitializeComponent();
         }
+
+
 
         private void button1a_Click(object sender, EventArgs e)
         {

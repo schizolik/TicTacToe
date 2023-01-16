@@ -25,7 +25,8 @@ namespace TicTacToe
 
         private void button4x4_Click(object sender, EventArgs e)
         {
-
+            Impossible impossible= new Impossible(this);
+            impossible.Show();
         }
 
         private void buttonImpossible3x3_Click(object sender, EventArgs e)
