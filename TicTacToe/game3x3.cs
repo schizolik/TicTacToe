@@ -79,6 +79,7 @@ namespace TicTacToe
                 buttonwhichturnXO.Text = "O";
 
                 array[x, y] = 1;
+
                 if (x == 0)
                 {
                     if (y == 0)
