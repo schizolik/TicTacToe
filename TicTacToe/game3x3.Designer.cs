@@ -45,7 +45,7 @@
             // 
             this.button1a.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1a.Location = new System.Drawing.Point(16, 24);
-            this.button1a.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1a.Margin = new System.Windows.Forms.Padding(2);
             this.button1a.Name = "button1a";
             this.button1a.Size = new System.Drawing.Size(60, 54);
             this.button1a.TabIndex = 0;
@@ -56,7 +56,7 @@
             // 
             this.button1b.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1b.Location = new System.Drawing.Point(81, 24);
-            this.button1b.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1b.Margin = new System.Windows.Forms.Padding(2);
             this.button1b.Name = "button1b";
             this.button1b.Size = new System.Drawing.Size(60, 54);
             this.button1b.TabIndex = 0;
@@ -67,7 +67,7 @@
             // 
             this.button1c.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1c.Location = new System.Drawing.Point(146, 24);
-            this.button1c.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1c.Margin = new System.Windows.Forms.Padding(2);
             this.button1c.Name = "button1c";
             this.button1c.Size = new System.Drawing.Size(60, 54);
             this.button1c.TabIndex = 0;
@@ -78,7 +78,7 @@
             // 
             this.button2a.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2a.Location = new System.Drawing.Point(16, 83);
-            this.button2a.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2a.Margin = new System.Windows.Forms.Padding(2);
             this.button2a.Name = "button2a";
             this.button2a.Size = new System.Drawing.Size(60, 54);
             this.button2a.TabIndex = 0;
@@ -89,7 +89,7 @@
             // 
             this.button2b.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2b.Location = new System.Drawing.Point(81, 83);
-            this.button2b.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2b.Margin = new System.Windows.Forms.Padding(2);
             this.button2b.Name = "button2b";
             this.button2b.Size = new System.Drawing.Size(60, 54);
             this.button2b.TabIndex = 0;
@@ -100,7 +100,7 @@
             // 
             this.button2c.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2c.Location = new System.Drawing.Point(146, 83);
-            this.button2c.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2c.Margin = new System.Windows.Forms.Padding(2);
             this.button2c.Name = "button2c";
             this.button2c.Size = new System.Drawing.Size(60, 54);
             this.button2c.TabIndex = 0;
@@ -111,7 +111,7 @@
             // 
             this.button3a.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3a.Location = new System.Drawing.Point(16, 141);
-            this.button3a.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3a.Margin = new System.Windows.Forms.Padding(2);
             this.button3a.Name = "button3a";
             this.button3a.Size = new System.Drawing.Size(60, 54);
             this.button3a.TabIndex = 0;
@@ -122,7 +122,7 @@
             // 
             this.button3b.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3b.Location = new System.Drawing.Point(81, 141);
-            this.button3b.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3b.Margin = new System.Windows.Forms.Padding(2);
             this.button3b.Name = "button3b";
             this.button3b.Size = new System.Drawing.Size(60, 54);
             this.button3b.TabIndex = 0;
@@ -133,7 +133,7 @@
             // 
             this.button3c.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3c.Location = new System.Drawing.Point(146, 141);
-            this.button3c.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3c.Margin = new System.Windows.Forms.Padding(2);
             this.button3c.Name = "button3c";
             this.button3c.Size = new System.Drawing.Size(60, 54);
             this.button3c.TabIndex = 0;
@@ -149,7 +149,6 @@
             this.buttonwhichturnXO.Size = new System.Drawing.Size(60, 54);
             this.buttonwhichturnXO.TabIndex = 0;
             this.buttonwhichturnXO.UseVisualStyleBackColor = true;
-            this.buttonwhichturnXO.Click += new System.EventHandler(this.button3b_Click);
             // 
             // labelwhichturn
             // 
@@ -177,10 +176,10 @@
             this.Controls.Add(this.button2a);
             this.Controls.Add(this.button1b);
             this.Controls.Add(this.button1a);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "game3x3";
-            this.Text = "Form2";
-            this.Load += new System.EventHandler(this.game3x3_Load);
+            this.Text = "game3x3";
+            this.Load += new System.EventHandler(this.Game3x3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -219,6 +219,7 @@ namespace TicTacToe
             check();
             XOcount++;
         }
+
         private void reset()
         {
             array = new int[3,3];
@@ -349,7 +350,7 @@ namespace TicTacToe
             {
                 ifThereIsWinnerO = true;
             }
-           else if (array[2, 0] == -1 && array[1, 1] == -1 && array[0, 2] == -1)
+            else if (array[2, 0] == -1 && array[1, 1] == -1 && array[0, 2] == -1)
             {
                 ifThereIsWinnerO = true;
             }
@@ -366,7 +367,7 @@ namespace TicTacToe
                 MessageBox.Show("Winner is O");
                 reset();
             }
-            else if (XOcount == 9)
+            else if (XOcount == 8)
             {
                 MessageBox.Show("It is draw");
                 reset();
@@ -375,7 +376,7 @@ namespace TicTacToe
 
         }
 
-        private void game3x3_Load(object sender, EventArgs e)
+        private void Game3x3_Load(object sender, EventArgs e)
         {
 
         }
