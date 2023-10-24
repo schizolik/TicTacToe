@@ -362,7 +362,8 @@ namespace TicTacToe
                 MessageBox.Show("Winner is X");
                 reset();
             }
-            else if(ifThereIsWinnerO == true)
+            // O win prompt
+            else if (ifThereIsWinnerO == true)
             {
                 MessageBox.Show("Winner is O");
                 reset();
