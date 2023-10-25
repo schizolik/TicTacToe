@@ -221,7 +221,7 @@ namespace TicTacToe
 
                 }
             }
-            else
+            else if(XOcount % 2 != 0)
             {
                 buttonwhichturnXO.BackColor = Color.Tomato;
                 buttonwhichturnXO.Text = "X";
